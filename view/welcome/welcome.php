@@ -87,6 +87,7 @@
 
                 <form action="registration.php" method="post" id="regform" onsubmit="return store()">
                     <div id="d8">
+                        
                         <input id="nam" name="nam" type="text" placeholder="Full Name"><br>
                         <span id="ner"></span><br>
 
