@@ -1,3 +1,10 @@
+<?php
+    $userid=$_GET["userid"];
+    $name=$_GET["name"];
+    /*<?php echo "" ?>*/
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,8 +16,8 @@
         <header id="head">
             <div id="d1">
                 <div id="d2">
-                    <span id="name"></span>NAME : <br>
-                    <span id="uid">USERID : </span>
+                    <span id="name"></span>NAME : <?php echo $name ?><br>
+                    <span id="uid">USERID : <?php echo $userid ?></span>
                 </div>
 
                 <div id="d3">

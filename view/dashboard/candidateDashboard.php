@@ -1,3 +1,23 @@
+<?php
+    $userid = $_GET["userid"] ?? "";
+    $name="";
+
+    $conn=mysqli_connect("localhost","root","","arms");
+    if($conn){
+        $sql="SELECT name FROM user WHERE userid=?";
+        $stmt=mysqli_prepare($conn,$sql);
+        if($stmt){
+            mysqli_stmt_bind_param($stmt,"s",$userid);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_bind_result($stmt,$name);
+            mysqli_stmt_fetch($stmt);
+            mysqli_stmt_close($stmt);
+        }
+        mysqli_close($conn);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,8 +29,8 @@
         <header id="head">
             <div id="d1">
                 <div id="d2">
-                    <span id="name"></span>NAME : <br>
-                    <span id="uid">USERID : </span>
+                    <span id="name"></span>NAME : <?php echo $name ?><br>
+                    <span id="uid">USERID : <?php echo $userid ?></span>
                 </div>
 
                 <div id="d3">
@@ -27,7 +47,7 @@
         <div id="d4">
 
             <div id="d5">
-                <a href="../generalInfo/generalInfo.php" style="color:bisque;">
+                <a href="<?php echo '../generalInfo/generalInfo.php?userid=' . urlencode($userid) . '&name=' . urlencode($name); ?>" style="color:bisque;">
                     <div class="im">
                         <img id="" src="../img/ginfo.gif">
                     </div>

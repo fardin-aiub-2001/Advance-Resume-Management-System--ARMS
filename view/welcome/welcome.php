@@ -128,10 +128,10 @@
 
                 <form action="login.php" method="get"  id="logform" onsubmit="return validation()">
                     <div id="d13">
-                        <input type="text" id="log" placeholder="Enter Your Email"><br>
+                        <input type="text" id="log" name="log" placeholder="Enter Your Email"><br>
                         <span id="logerr"></span><br>
 
-                        <input type="password" id="logpass" placeholder="Enter Your Password"><br>
+                        <input type="password" id="logpass" name="logpass" placeholder="Enter Your Password"><br>
                         <span id="logpasserr"></span><br>
                     </div>
                     
