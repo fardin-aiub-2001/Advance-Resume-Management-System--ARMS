@@ -63,7 +63,7 @@
     position:relative;
     top:5px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: larger;
 }
 #edit{
@@ -75,7 +75,8 @@
     background-color: bisque;
     border-radius: 10px;
     font-size: 20px;
-    color:#08041f
+    color:#08041f;
+    z-index: 2;
 }
 #edit:hover{
     background-color:rgba(211, 207, 218, 0.876);

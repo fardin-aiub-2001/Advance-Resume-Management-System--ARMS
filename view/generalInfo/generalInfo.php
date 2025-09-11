@@ -2,6 +2,38 @@
     $userid=$_GET["userid"];
     $name=$_GET["name"];
     /*<?php echo "" ?>*/
+
+    $email="";
+    $phone_number="";
+    $present_address="";
+    $parmanent_address="";
+    $about_me="";
+    $photo="";
+
+    $conn=mysqli_connect("localhost", "root" ,"","arms");
+    $sql="SELECT photo, present_address, parmanent_address, about_me FROM candidate WHERE userid=?";
+    $stmt=mysqli_prepare($conn,$sql);
+    if($stmt){
+        mysqli_stmt_bind_param($stmt,'s',$userid);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt,$photo,$present_address,$parmanent_address,$about_me);
+        mysqli_stmt_fetch($stmt);
+        mysqli_stmt_close($stmt);
+
+    }
+    $sql="SELECT email, phone_number FROM user WHERE userid=?";
+    $stmt=mysqli_prepare($conn,$sql);
+    if($stmt){
+        mysqli_stmt_bind_param($stmt,'s',$userid);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt,$email,$phone_number);
+        mysqli_stmt_fetch($stmt);
+        mysqli_stmt_close($stmt);
+
+    }
+    mysqli_close($conn);
+
+
 ?>
 
 
@@ -25,6 +57,16 @@
                 transform: translateX(-50%);
                 display: none;
                 justify-content: center;
+                z-index:1;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 34px;
+                font-weight: bold;
+                color: bisque;
+                text-shadow: 1px 1px 2px black;
+
             }
 
             #preadd, #peradd{
@@ -103,23 +145,24 @@
         </header>
         <br>
 
+            <div id="d10">
 
-        <div id="d10">
-            <img id="myImg">
-        </div>
+            </div>
+        
 
         <div id="main">
-            <span id="s1">Name                : </span>
+            <h1>General Information</h1><br><br>
+            <span id="s1">Name                : <?php echo $name ?></span>
                 <span id="i1"></span><br><br>
-            <span id="s2">Email               : </span>
+            <span id="s2">Email               : <?php echo $email ?></span>
                 <span id="i2"></span><br><br>
-            <span id="s3">Phone number        : </span>
+            <span id="s3">Phone number        : <?php echo $phone_number ?></span>
                 <span id="i3"></span><br><br>
-            <span id="s5">Present Address     : </span>
+            <span id="s5">Present Address     : <?php echo $present_address ?></span>
                 <span id="i4"></span><br><br>
-            <span id="s6">Permanent Address   : </span>
+            <span id="s6">Permanent Address   : <?php echo $parmanent_address ?></span>
                 <span id="i5"></span><br><br>
-            <span id="s7">About Me            : </span>
+            <span id="s7">About Me            : <?php echo $about_me ?></span>
                 <span id="i6"></span><br><br>
         </div><br><br><br> <br>
 
