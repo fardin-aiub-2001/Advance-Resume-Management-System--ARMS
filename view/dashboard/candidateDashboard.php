@@ -1,21 +1,5 @@
 <?php
-    $userid = $_GET["userid"] ?? "";
-    $name="";
-
-    $conn=mysqli_connect("localhost","root","","arms");
-    if($conn){
-        $sql="SELECT name FROM user WHERE userid=?";
-        $stmt=mysqli_prepare($conn,$sql);
-        if($stmt){
-            mysqli_stmt_bind_param($stmt,"s",$userid);
-            mysqli_stmt_execute($stmt);
-            mysqli_stmt_bind_result($stmt,$name);
-            mysqli_stmt_fetch($stmt);
-            mysqli_stmt_close($stmt);
-        }
-        mysqli_close($conn);
-    }
-
+    
 ?>
 
 <!DOCTYPE html>
