@@ -91,3 +91,8 @@
     transform: translateX(-50%);
     box-shadow: 0px 4px 12px rgba(242, 242, 244, 0.6);
 }
+#profilepic{
+    height:150px;
+    width:150px;
+    border-radius: 40%;
+}

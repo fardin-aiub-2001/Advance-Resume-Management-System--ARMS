@@ -1,8 +1,7 @@
 let edit=document.getElementById("edit");
 let d101=document.getElementById("d101");
 let c=document.getElementById("c");
-
-let img = document.getElementById("img").value;
+let img = document.getElementById("imga").value;
 let preadd = document.getElementById("preadd").value;
 let peradd = document.getElementById("peradd").value;
 let about = document.getElementById("about").value;

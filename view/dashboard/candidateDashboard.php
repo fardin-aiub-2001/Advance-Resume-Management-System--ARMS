@@ -1,5 +1,6 @@
 <?php
-    
+    $userid= $_COOKIE['userid'];
+    $name= $_COOKIE['name'];
 ?>
 
 <!DOCTYPE html>

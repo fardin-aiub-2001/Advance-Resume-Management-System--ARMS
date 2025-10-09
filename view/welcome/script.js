@@ -44,7 +44,7 @@ button5.addEventListener("click",validation);
 //design regex
 let namregex=/^[A-Za-z\s]{3,50}$/;
 let emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-let numregex=/^\d{12}$/;
+let numregex=/^\d{11}$/;
 
 password.addEventListener("input",verify);
     function verify(){

@@ -85,7 +85,7 @@
                     <h3>Create Your Account</h3>
                 </div>
 
-                <form action="registration.php" method="post" id="regform" onsubmit="return store()">
+                <form action="../../controller/registration.php" method="post" id="regform" onsubmit="return store()">
                     <div id="d8">
                         
                         <input id="nam" name="nam" type="text" placeholder="Full Name"><br>
@@ -126,7 +126,7 @@
                     <h3>Sign In Your Account</h3>
                 </div>
 
-                <form action="login.php" method="get"  id="logform" onsubmit="return validation()">
+                <form action="../../controller/login.php" method="get"  id="logform" onsubmit="return validation()">
                     <div id="d13">
                         <input type="text" id="log" name="log" placeholder="Enter Your Email"><br>
                         <span id="logerr"></span><br>

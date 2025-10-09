@@ -1,3 +1,35 @@
+<?php
+    $userid = $_COOKIE['userid'];
+    $name = $_COOKIE['name'];
+    $email = $_COOKIE['eml'];
+    $query="SELECT * FROM user WHERE userid='$userid'";
+    $conn = mysqli_connect('localhost', 'root', '', 'arms');
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $phone_number = $row['phone_number'];
+    
+    $query2 = "SELECT * FROM candidate WHERE userid='$userid'";
+    $result2 = mysqli_query($conn, $query2);
+    if(mysqli_num_rows($result2)==0){
+        $present_address="";
+        $parmanent_address="";
+        $about_me="";
+    }
+    else{
+        $row2 = mysqli_fetch_assoc($result2);
+        $present_address = $row2['present_address'];
+        $parmanent_address = $row2['parmanent_address'];
+        $about_me = $row2['about_me'];
+    }
+
+    $picq="SELECT photo FROM candidate WHERE userid='$userid'";
+    $picr=mysqli_query($conn,$picq);
+    $picrow=mysqli_fetch_assoc($picr);
+    mysqli_close($conn);
+    $pic=$picrow['photo'];
+    
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -107,10 +139,9 @@
         <br>
 
             <div id="d10">
-
+                <img id="profilepic" src="<?php echo '../uploaded image/'.$pic; ?>" alt="Profile Picture" width="150" height="150">
             </div>
         
-
         <div id="main">
             <h1>General Information</h1><br><br>
             <span id="s1">Name                : <?php echo $name ?></span>
@@ -129,10 +160,10 @@
 
 
         <div id="d101">
-            <form id="f1" method="post" action="updateinfor.php?userid=<?php echo urlencode($userid); ?>&name=<?php echo urlencode($name); ?>">
+            <form id="f1" method="post" action="../../controller/updateinfor.php" enctype="multipart/form-data">
                 <button id="c" type="button">X</button><br>
                 <h2>Update Your Information</h2><br>
-                <input type="file" id="img" name="img" accept="image/*" ><br>
+                <input type="file" id="imga" name="imga"><br>
                 <span id="imgerr"></span><br>
                 <input type="text" name="preadd" id="preadd" placeholder="Enter your present address"><br>
                 <span id="preadderr"></span><br>
@@ -140,7 +171,7 @@
                 <span id="peradderr"></span><br>
                 <textarea id="about" name="about" rows="8" cols="30" placeholder="Write something about you..."></textarea><br>
                 <span id="abouterr"></span><br>
-                <input type="submit" id="save" value="Save">
+                <input type="submit" id="save" name="save" value="Update">
             </form>
         </div>
 
