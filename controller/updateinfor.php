@@ -1,11 +1,10 @@
 <?php
-    //getting image from the form
     $filename=$_FILES["imga"]["name"];
     $tempname=$_FILES["imga"]["tmp_name"];
     $folder="../view/uploaded image/".$filename;
     $userid=$_COOKIE["userid"];
     move_uploaded_file($tempname,$folder);
-    //getting other information from the form
+       
     $preadd=$_POST["preadd"];
     $peradd=$_POST["peradd"];
     $about=$_POST["about"];
@@ -21,17 +20,14 @@
     }
     $mresult=mysqli_query($conn,$mainquery);
     if ($mresult) {
-    // Query was successful
 
         echo "<script>
                         alert('Successfully Updated');
-                        window.location.href = '../view/generalInfo/generalInfo.php';
+                        window.location.href='../view/generalInfo/generalInfo.php';
              </script>";
 
-        //echo "Information updated successfully.";
     } else {
-        // Query failed
-        echo "Error: " . mysqli_error($conn);
+        echo "Error: ".mysqli_error($conn);
     }
     mysqli_close($conn);
 

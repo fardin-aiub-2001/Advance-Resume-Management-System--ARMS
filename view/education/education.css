@@ -1,0 +1,214 @@
+#dbody{
+    background-color: #08041f;
+}
+#d1{
+    height:80px;
+    width:auto;
+    background-color: #060317;
+    padding:15px;
+    border:1px solid bisque;
+    box-shadow: 0px 4px 12px rgba(242, 242, 244, 0.6);
+    position:relative;
+}
+#head{
+    color:bisque;
+}
+#d2{
+    position:absolute;
+    left:30px;
+    top: 30px;
+}
+#d3{
+    position:absolute;
+    right:30px;
+    top: 30px;
+}
+#logout{
+    height:40px;
+    width:120px;
+    margin-left:15px;
+    border-radius: 8px;
+    font-size: 20px;
+    right:10px;
+    border:0px solid white;
+    background-color: white;
+}
+
+#logout:hover{
+    background-color:rgba(211, 207, 218, 0.876);
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
+#footer{
+    background-color: #060317;
+    color: bisque;
+    text-align: center;
+    padding:15px 0;
+    border:1px solid bisque;
+    box-shadow: 0px 4px 12px rgba(242, 242, 244, 0.6);
+    position:relative;
+
+    top:25px;
+    width: 100%;
+    margin-top: 30px;
+}
+h1{
+    color:bisque;
+    text-align: center;
+    margin-top: 30px;
+}
+hr{
+    width:30%;
+    color :bisque;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+#add{
+    height:40px;
+    width:120px;
+    margin-left:15px;
+    border-radius: 8px;
+    font-size: 20px;
+    right:10px;
+    border:0px solid white;
+    background-color: white;
+    position:relative;
+    left:90%;
+}
+
+#main{
+    text-align: left;
+    color:bisque;
+    width: 40%;
+    margin-top: 20px;
+    height : auto;
+    padding: 20px;
+    border: 1px solid bisque;
+    box-shadow: 0px 4px 12px rgba(242, 242, 244, 0.6);
+    position:relative;
+    border-radius: 15px;
+    left:10px;
+
+}
+#degree{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+#field,
+#institute,
+#year,
+#gpa{
+    font-size: medium;
+}
+label{
+    font-size: medium;
+    font-weight: bolder;
+}
+#delete{
+    height:30px;
+    width:80px;
+    margin-left:15px;
+    border-radius: 8px;
+    font-size: 15px;
+    right:10px;
+    border:0px solid white;
+    background-color: red;
+    color: white;
+    position:relative;
+    left:85%;
+}
+#delete:hover{
+    background-color:maroon;
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    border: 1px solid bisque;
+    padding: 20px;
+    border-radius: 15px;
+    width:360px;
+    position:relative;
+
+}
+#l{
+    font-size: x-large;
+    font-weight: bolder;
+    color: bisque;
+    font-size: 20px;
+}
+
+#form{
+    font-size: x-large;
+    font-weight: bolder;
+    color: bisque;
+    font-size: 20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: #08041f;
+    padding:20px;
+    border:1px solid bisque;
+    box-shadow: 0px 4px 12px rgba(242, 242, 244, 0.6);
+    display:none;
+    z-index: 1;
+    border-radius:15px;
+    height:auto;
+    width:400px;
+
+}
+
+#save{
+    height:40px;
+    width:120px;
+    margin-left:15px;
+    border-radius: 8px;
+    font-size: 20px;
+    right:10px;
+    border:0px solid white;
+    background-color: white;
+    position:relative;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select{
+    height:30px;
+    width:300px;
+    border-radius: 8px;
+    font-size: 15px;
+    padding-left: 10px;
+    border:1px solid bisque;
+    background-color: #08041f;
+    color: bisque;
+    position:relative
+}
+#l1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: bisque;
+    font-size: 25px;
+}
+
+#eduform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

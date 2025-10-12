@@ -101,6 +101,8 @@
                 </a>
             </div>
 
+            <?php
+            /*
             <div id="d10">
                 <a href="../skills/skill.php" style="color:bisque;">
                     <div class="im">
@@ -111,6 +113,8 @@
                     </div>
                 </a>
             </div>
+            */
+            ?>
 
             <div id="d13">
                 <a href="../connect/connect.php" style="color:bisque;">
