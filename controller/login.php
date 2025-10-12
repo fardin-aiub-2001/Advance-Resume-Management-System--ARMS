@@ -22,8 +22,14 @@
                 //setcookie('pass', $pass, time()+86400, '/');
                 setcookie('userid', $sqlrel['userid'], time()+86400, '/');
                 setcookie('name', $sqlrel['name'], time()+86400, '/');
-
+                if($sqlrel['type']=="candidate"){
                 header("Location: ../view/dashboard/candidateDashboard.php");
+                }
+
+                else if($sqlrel['type']=="admin"){
+                header("Location: ../view/admin/admin.php");
+                }
+                
             }
             else{
                 echo "<script>
