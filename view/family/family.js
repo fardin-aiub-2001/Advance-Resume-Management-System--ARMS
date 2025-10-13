@@ -14,3 +14,11 @@ function dodo(event){
     event.preventDefault();
     d11.style.display="block";
 }
+let logout = document.getElementById("logout");
+
+function functionout(event) {
+    event.preventDefault();
+    window.location.href='../welcome/welcome.php';
+}
+
+logout.addEventListener("click", functionout);

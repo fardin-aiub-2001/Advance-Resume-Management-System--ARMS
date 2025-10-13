@@ -11,13 +11,21 @@ let preadderr = document.getElementById("preadderr");
 let peradderr = document.getElementById("peradderr");
 let abouterr = document.getElementById("abouterr");
 
+let logout = document.getElementById("logout");
 
+function functionout(event) {
+    event.preventDefault();
+    window.location.href='../welcome/welcome.php';
+}
+
+logout.addEventListener("click", functionout);
 
 edit.addEventListener("click",load);
 function load(){
     d101.style.display="flex";
 }
-c.addEventListener("click",close);
-function close(){
+c.addEventListener("click",cloose);
+function cloose(){
     d101.style.display="none";
 }
+
