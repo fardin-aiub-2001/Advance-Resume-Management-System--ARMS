@@ -1,3 +1,7 @@
 # Advance-Resume-Management-System--ARMS
 The Advance Resume Management System or ARMS is a web base application that serves to store organise and present academic and personal information. It also helps to visualise and present overview of academic performance and personal skills. It is developed to help candidate and users for building personal skill overview and share easily.
 <img width="1920" height="1494" alt="screencapture-localhost-ARMS-view-welcome-welcome-php-2025-11-07-08_15_39" src="https://github.com/user-attachments/assets/d290f987-ab0a-4a6f-b024-a25f5234a18d" />
+<img width="1920" height="1494" alt="screencapture-localhost-ARMS-view-welcome-welcome-php-2025-11-07-08_16_39" src="https://github.com/user-attachments/assets/688b509f-2c93-479b-94fe-d07fc299d523" />
+<img width="1920" height="1494" alt="screencapture-localhost-ARMS-view-welcome-welcome-php-2025-11-07-08_16_28" src="https://github.com/user-attachments/assets/95ce24d6-4bb5-4a56-9edb-a839ca209405" />
+<img width="1920" height="979" alt="screencapture-localhost-ARMS-view-dashboard-candidateDashboard-php-2025-11-07-08_19_19" src="https://github.com/user-attachments/assets/f7cffda9-bcf8-4674-92e9-9627651ee9e0" />
+<img width="1954" height="982" alt="screencapture-localhost-ARMS-view-generalInfo-generalInfo-php-2025-11-07-08_20_35" src="https://github.com/user-attachments/assets/da00716f-7680-4d8e-8f0c-8504adcd17dc" />
