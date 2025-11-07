@@ -5,3 +5,15 @@ The Advance Resume Management System or ARMS is a web base application that serv
 <img width="1920" height="1494" alt="screencapture-localhost-ARMS-view-welcome-welcome-php-2025-11-07-08_16_28" src="https://github.com/user-attachments/assets/95ce24d6-4bb5-4a56-9edb-a839ca209405" />
 <img width="1920" height="979" alt="screencapture-localhost-ARMS-view-dashboard-candidateDashboard-php-2025-11-07-08_19_19" src="https://github.com/user-attachments/assets/f7cffda9-bcf8-4674-92e9-9627651ee9e0" />
 <img width="1954" height="982" alt="screencapture-localhost-ARMS-view-generalInfo-generalInfo-php-2025-11-07-08_20_35" src="https://github.com/user-attachments/assets/da00716f-7680-4d8e-8f0c-8504adcd17dc" />
+<img width="1954" height="982" alt="screencapture-localhost-ARMS-view-generalInfo-generalInfo-php-2025-11-07-08_20_52" src="https://github.com/user-attachments/assets/3621720b-bab7-4a68-b1e5-4fef9499419c" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-education-education-php-2025-11-07-08_21_31" src="https://github.com/user-attachments/assets/d3a61f07-3132-45cf-b32e-bd69822fb678" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-education-education-php-2025-11-07-08_22_22" src="https://github.com/user-attachments/assets/04121898-8d07-4c1f-9e25-69fef3157701" />
+<img width="1920" height="1460" alt="screencapture-localhost-ARMS-view-candidate-summary-php-2025-11-07-08_24_43" src="https://github.com/user-attachments/assets/3e032c3a-dea2-46b3-91d8-b50928cf78ab" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-result-result-php-2025-11-07-08_22_35" src="https://github.com/user-attachments/assets/d6a74c4c-e990-4ac6-841f-02260300eeee" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-project-project-php-2025-11-07-08_23_17" src="https://github.com/user-attachments/assets/264db99b-89f1-4c61-aefd-7c58261e8913" />
+<img width="1920" height="2179" alt="screencapture-localhost-ARMS-view-resume-resume-php-2025-11-07-08_22_53" src="https://github.com/user-attachments/assets/30034175-db8a-4507-bee5-6a7ae947d2d5" />
+<<img width="1954" height="869" alt="screencapture-localhost-ARMS-view-family-family-php-2025-11-07-08_21_12" src="https://github.com/user-attachments/assets/bf10773e-65c5-440f-b8e7-8e8093d542de" />
+img width="1920" height="869" alt="screencapture-localhost-ARMS-view-result-result-php-2025-11-07-08_22_42" src="https://github.com/user-attachments/assets/495f7d64-080d-4c92-8fc0-6dc30de11cb9" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-admin-admin-php-2025-11-07-08_24_30" src="https://github.com/user-attachments/assets/3b7fe568-3866-49d6-9430-905de257ed29" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-admin-admin-php-2025-11-07-08_24_21" src="https://github.com/user-attachments/assets/935285e3-2c97-4e03-bb8c-c4d95275e4cb" />
+<img width="1920" height="869" alt="screencapture-localhost-ARMS-view-admin-admin-php-2025-11-07-08_24_12" src="https://github.com/user-attachments/assets/52c52355-e2d4-45db-a22a-10b6787df23a" />
